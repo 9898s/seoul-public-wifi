@@ -67,10 +67,10 @@
 
 <form method="get" action="index.jsp" id="form-list">
     <label>
-        LAT: <input type="text" id="lat" name="lat" value="0.0">
+        LNT: <input type="text" id="lnt" name="lnt" value="0.0">
     </label>
     <label>
-        LNT: <input type="text" id="lnt" name="lnt" value="0.0">
+        LAT: <input type="text" id="lat" name="lat" value="0.0">
     </label>
     <input type="button" value="내 위치 가져오기" onclick="getLocation();">
     <input type="submit" value="근처 WIFI 정보 보기">
@@ -93,8 +93,8 @@
         <th>설치년도</th>
         <th>실내외구분</th>
         <th>WIFI접속환경</th>
-        <th>Y좌표</th>
         <th>X좌표</th>
+        <th>Y좌표</th>
         <th>작업일자</th>
     </tr>
     </thead>
@@ -110,7 +110,7 @@
             try {
                 latValue = Double.parseDouble(lat);
             } catch (NumberFormatException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
             }
         }
 
@@ -118,7 +118,7 @@
             try {
                 lntValue = Double.parseDouble(lnt);
             } catch (NumberFormatException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
             }
         }
 
@@ -130,8 +130,8 @@
     <%
     } else {
         HistoryDto historyDto = new HistoryDto();
-        historyDto.setLnt(lntValue);
         historyDto.setLat(latValue);
+        historyDto.setLnt(lntValue);
 
         HistoryDao historyDao = new HistoryDao();
         historyDao.insert(historyDto);
@@ -187,10 +187,10 @@
             <%= item.getRemars3() %>
         </td>
         <td>
-            <%= item.getLat() %>
+            <%= item.getLnt() %>
         </td>
         <td>
-            <%= item.getLnt() %>
+            <%= item.getLat() %>
         </td>
         <td>
             <%= item.getWorkDttm() %>
@@ -213,11 +213,11 @@
     }
 
     function showPosition(position) {
-        const y = position.coords.longitude;
-        const x = position.coords.latitude;
+        const x = position.coords.longitude;
+        const y = position.coords.latitude;
 
-        document.getElementById("lat").value = y;
-        document.getElementById("lnt").value = x;
+        document.getElementById("lat").value = x;
+        document.getElementById("lnt").value = y;
     }
 </script>
 </body>

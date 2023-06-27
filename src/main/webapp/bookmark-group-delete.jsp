@@ -54,7 +54,6 @@
 <%
     String id = request.getParameter("id");
 
-
     BookmarkGroupDao bookmarkGroupDao = new BookmarkGroupDao();
     BookmarkGroupDto bookmarkGroupDto = bookmarkGroupDao.select(Integer.parseInt(id));
 %>

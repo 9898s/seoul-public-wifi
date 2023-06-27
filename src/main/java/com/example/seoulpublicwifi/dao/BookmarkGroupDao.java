@@ -129,6 +129,9 @@ public class BookmarkGroupDao {
         try {
             conn = DriverManager.getConnection(Db.URL);
 
+            ps = conn.prepareStatement("PRAGMA foreign_keys = ON;");
+            ps.executeUpdate();
+
             String sql = "DELETE FROM BOOKMARK_GROUP WHERE ID = ?;";
 
             ps = conn.prepareStatement(sql);

@@ -9,11 +9,14 @@
     String id = request.getParameter("id");
 
     HistoryDao historyDao = new HistoryDao();
-    historyDao.delete(Integer.valueOf(id));
+    int affected = historyDao.delete(Integer.valueOf(id));
 %>
 
 <script>
-    alert("위치 히스토리 데이터를 삭제하였습니다.");
+    <%
+        String text = affected > 0 ? "위치 히스토리 데이터를 삭제하였습니다." : "위치 히스토리 데이터를 삭제하지 못했습니다.";
+    %>
+    alert("<%= text %>");
     location.href = "history.jsp";
 </script>
 </body>

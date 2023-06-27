@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WifiDao {
-    public void insert(WifiDto wifiDto) {
+    public int insert(WifiDto wifiDto) {
         try {
             Class.forName(Db.CLASS);
         } catch (ClassNotFoundException e) {
@@ -17,6 +17,7 @@ public class WifiDao {
 
         Connection conn = null;
         PreparedStatement ps = null;
+        int affected = 0;
 
         try {
             conn = DriverManager.getConnection(Db.URL);
@@ -41,7 +42,7 @@ public class WifiDao {
             ps.setDouble(15, wifiDto.getLnt());
             ps.setString(16, wifiDto.getWorkDttm());
 
-            int affected = ps.executeUpdate();
+            affected = ps.executeUpdate();
             if (affected > 0) {
                 System.out.println("와이파이 데이터 삽입 성공");
             } else {
@@ -65,6 +66,7 @@ public class WifiDao {
                 e.printStackTrace();
             }
         }
+        return affected;
     }
 
     public WifiDto select(String mgrNo) {

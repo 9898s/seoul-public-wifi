@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookmarkDao {
-    public void upsert(BookmarkDto bookmarkDto) {
+    public int upsert(BookmarkDto bookmarkDto) {
         try {
             Class.forName(Db.CLASS);
         } catch (ClassNotFoundException e) {
@@ -17,6 +17,7 @@ public class BookmarkDao {
 
         Connection conn = null;
         PreparedStatement ps = null;
+        int affected = 0;
 
         try {
             conn = DriverManager.getConnection(Db.URL);
@@ -27,7 +28,7 @@ public class BookmarkDao {
             ps.setInt(1, bookmarkDto.getGId());
             ps.setString(2, bookmarkDto.getMgrNo());
 
-            int affected = ps.executeUpdate();
+            affected = ps.executeUpdate();
             if (affected > 0) {
                 System.out.println("북마크 데이터 삽입 성공");
             } else {
@@ -51,6 +52,7 @@ public class BookmarkDao {
                 e.printStackTrace();
             }
         }
+        return affected;
     }
 
     public BookmarkDto select(int id) {
@@ -114,7 +116,7 @@ public class BookmarkDao {
         return bookmarkDto;
     }
 
-    public void delete(int id) {
+    public int delete(int id) {
         try {
             Class.forName(Db.CLASS);
         } catch (ClassNotFoundException e) {
@@ -123,6 +125,7 @@ public class BookmarkDao {
 
         Connection conn = null;
         PreparedStatement ps = null;
+        int affected = 0;
 
         try {
             conn = DriverManager.getConnection(Db.URL);
@@ -132,7 +135,7 @@ public class BookmarkDao {
             ps = conn.prepareStatement(sql);
             ps.setInt(1, id);
 
-            int affected = ps.executeUpdate();
+            affected = ps.executeUpdate();
             if (affected > 0) {
                 System.out.println("북마크 데이터 삭제 성공");
             } else {
@@ -156,6 +159,7 @@ public class BookmarkDao {
                 e.printStackTrace();
             }
         }
+        return affected;
     }
 
     public int count() {

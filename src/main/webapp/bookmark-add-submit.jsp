@@ -23,11 +23,14 @@
     bookmarkDto.setMgrNo(mgrNo);
 
     BookmarkDao bookmarkDao = new BookmarkDao();
-    bookmarkDao.upsert(bookmarkDto);
+    int affected = bookmarkDao.upsert(bookmarkDto);
 %>
 
 <script>
-    alert("북마크 데이터를 추가하였습니다.");
+    <%
+        String text = affected > 0 ? "북마크에 데이터를 추가하였습니다." : "북마크에 데이터를 추가하지 못했습니다.";
+    %>
+    alert("<%= text %>");
     location.href = "bookmark-list.jsp";
 </script>
 </body>

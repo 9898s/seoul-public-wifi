@@ -216,8 +216,8 @@
         const x = position.coords.longitude;
         const y = position.coords.latitude;
 
-        document.getElementById("lat").value = x;
         document.getElementById("lnt").value = y;
+        document.getElementById("lat").value = x;
     }
 </script>
 </body>

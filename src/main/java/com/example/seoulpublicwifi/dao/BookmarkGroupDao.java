@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookmarkGroupDao {
-    public void insert(BookmarkGroupDto bookmarkGroupDto) {
+    public int insert(BookmarkGroupDto bookmarkGroupDto) {
         try {
             Class.forName(Db.CLASS);
         } catch (ClassNotFoundException e) {
@@ -17,6 +17,7 @@ public class BookmarkGroupDao {
 
         Connection conn = null;
         PreparedStatement ps = null;
+        int affected = 0;
 
         try {
             conn = DriverManager.getConnection(Db.URL);
@@ -27,7 +28,7 @@ public class BookmarkGroupDao {
             ps.setString(1, bookmarkGroupDto.getName());
             ps.setInt(2, bookmarkGroupDto.getSeq());
 
-            int affected = ps.executeUpdate();
+            affected = ps.executeUpdate();
             if (affected > 0) {
                 System.out.println("북마크 그룹 데이터 삽입 성공");
             } else {
@@ -51,6 +52,7 @@ public class BookmarkGroupDao {
                 e.printStackTrace();
             }
         }
+        return affected;
     }
 
     public BookmarkGroupDto select(int id) {
@@ -116,7 +118,7 @@ public class BookmarkGroupDao {
         return bookmarkGroupDto;
     }
 
-    public void delete(int id) {
+    public int delete(int id) {
         try {
             Class.forName(Db.CLASS);
         } catch (ClassNotFoundException e) {
@@ -125,6 +127,7 @@ public class BookmarkGroupDao {
 
         Connection conn = null;
         PreparedStatement ps = null;
+        int affected = 0;
 
         try {
             conn = DriverManager.getConnection(Db.URL);
@@ -137,7 +140,7 @@ public class BookmarkGroupDao {
             ps = conn.prepareStatement(sql);
             ps.setInt(1, id);
 
-            int affected = ps.executeUpdate();
+            affected = ps.executeUpdate();
             if (affected > 0) {
                 System.out.println("북마크 그룹 데이터 삭제 성공");
             } else {
@@ -161,9 +164,10 @@ public class BookmarkGroupDao {
                 e.printStackTrace();
             }
         }
+        return affected;
     }
 
-    public void update(BookmarkGroupDto bookmarkGroupDto) {
+    public int update(BookmarkGroupDto bookmarkGroupDto) {
         try {
             Class.forName(Db.CLASS);
         } catch (ClassNotFoundException e) {
@@ -172,6 +176,7 @@ public class BookmarkGroupDao {
 
         Connection conn = null;
         PreparedStatement ps = null;
+        int affected = 0;
 
         try {
             conn = DriverManager.getConnection(Db.URL);
@@ -183,7 +188,7 @@ public class BookmarkGroupDao {
             ps.setInt(2, bookmarkGroupDto.getSeq());
             ps.setInt(3, bookmarkGroupDto.getId());
 
-            int affected = ps.executeUpdate();
+            affected = ps.executeUpdate();
             if (affected > 0) {
                 System.out.println("북마크 그룹 데이터 업데이트 성공");
             } else {
@@ -207,6 +212,7 @@ public class BookmarkGroupDao {
                 e.printStackTrace();
             }
         }
+        return affected;
     }
 
     public int count() {

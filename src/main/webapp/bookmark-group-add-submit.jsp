@@ -17,11 +17,14 @@
     bookmarkGroupDto.setSeq(Integer.parseInt(seq));
 
     BookmarkGroupDao bookmarkGroupDao = new BookmarkGroupDao();
-    bookmarkGroupDao.insert(bookmarkGroupDto);
+    int affected = bookmarkGroupDao.insert(bookmarkGroupDto);
 %>
 
 <script>
-    alert("북마크 그룹 데이터를 추가하였습니다.");
+    <%
+        String text = affected > 0 ? "북마크 그룹 데이터를 추가하였습니다." : "북마크 그룹 데이터를 추가하지 못했습니다.";
+    %>
+    alert("<%= text %>");
     location.href = "bookmark-group.jsp";
 </script>
 </body>

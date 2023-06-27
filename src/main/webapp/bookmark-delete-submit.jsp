@@ -11,11 +11,14 @@
     String id = request.getParameter("id");
 
     BookmarkDao bookmarkDao = new BookmarkDao();
-    bookmarkDao.delete(Integer.parseInt(id));
+    int affected = bookmarkDao.delete(Integer.parseInt(id));
 %>
 
 <script>
-    alert("북마크 데이터를 삭제하였습니다.");
+    <%
+        String text = affected > 0 ? "북마크 데이터를 삭제하였습니다." : "북마크 데이터를 삭제하지 못했습니다.";
+    %>
+    alert("<%= text %>");
     location.href = "bookmark-list.jsp";
 </script>
 </body>

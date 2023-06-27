@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HistoryDao {
-    public void insert(HistoryDto historyDto) {
+    public int insert(HistoryDto historyDto) {
         try {
             Class.forName(Db.CLASS);
         } catch (ClassNotFoundException e) {
@@ -17,6 +17,7 @@ public class HistoryDao {
 
         Connection conn = null;
         PreparedStatement ps = null;
+        int affected = 0;
 
         try {
             conn = DriverManager.getConnection(Db.URL);
@@ -27,7 +28,7 @@ public class HistoryDao {
             ps.setDouble(1, historyDto.getLnt());
             ps.setDouble(2, historyDto.getLat());
 
-            int affected = ps.executeUpdate();
+            affected = ps.executeUpdate();
             if (affected > 0) {
                 System.out.println("히스토리 데이터 삽입 성공");
             } else {
@@ -51,9 +52,10 @@ public class HistoryDao {
                 e.printStackTrace();
             }
         }
+        return affected;
     }
 
-    public void delete(int id) {
+    public int delete(int id) {
         try {
             Class.forName(Db.CLASS);
         } catch (ClassNotFoundException e) {
@@ -62,6 +64,7 @@ public class HistoryDao {
 
         Connection conn = null;
         PreparedStatement ps = null;
+        int affected = 0;
 
         try {
             conn = DriverManager.getConnection(Db.URL);
@@ -71,7 +74,7 @@ public class HistoryDao {
             ps = conn.prepareStatement(sql);
             ps.setInt(1, id);
 
-            int affected = ps.executeUpdate();
+            affected = ps.executeUpdate();
             if (affected > 0) {
                 System.out.println("히스토리 데이터 삭제 성공");
             } else {
@@ -95,6 +98,7 @@ public class HistoryDao {
                 e.printStackTrace();
             }
         }
+        return affected;
     }
 
     public int count() {

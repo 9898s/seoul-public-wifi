@@ -9,17 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="1일차">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dto/BookmarkDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-add-submit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-delete-submit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-list.jsp" afterDir="false" />
+    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="README 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkGroupDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-group-delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/HistoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/WifiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/WifiDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-add-submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-add-submit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-delete-submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-delete-submit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-group-add-submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-add-submit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-group-delete-submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-delete-submit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-group-edit-submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-edit-submit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/history-delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/history-delete.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wifi.db" beforeDir="false" afterPath="$PROJECT_DIR$/wifi.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +46,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Rks1WsdOeCnAPuzxXBZTMH5OK0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -280,7 +286,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687805198367</updated>
-      <workItem from="1687805199374" duration="23764000" />
+      <workItem from="1687805199374" duration="27465000" />
     </task>
     <task id="LOCAL-00001" summary="1일차">
       <created>1687828739832</created>
@@ -289,7 +295,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687828739832</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2일차">
+      <created>1687858908819</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687858908819</updated>
+    </task>
+    <task id="LOCAL-00003" summary="README 추가">
+      <created>1687859360469</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687859360469</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +317,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1일차" />
-    <option name="LAST_COMMIT_MESSAGE" value="1일차" />
+    <MESSAGE value="2일차" />
+    <MESSAGE value="README 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="README 추가" />
   </component>
 </project>

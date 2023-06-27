@@ -19,11 +19,14 @@
     bookmarkGroupDto.setSeq(Integer.parseInt(seq));
 
     BookmarkGroupDao bookmarkGroupDao = new BookmarkGroupDao();
-    bookmarkGroupDao.update(bookmarkGroupDto);
+    int affected = bookmarkGroupDao.update(bookmarkGroupDto);
 %>
 
 <script>
-    alert("북마크 그룹 데이터를 수정하였습니다.");
+    <%
+        String text = affected > 0 ? "북마크 그룹 데이터를 수정하였습니다." : "북마크 그룹 데이터를 수정하지 못했습니다.";
+    %>
+    alert("<%= text %>");
     location.href = "bookmark-group.jsp";
 </script>
 </body>

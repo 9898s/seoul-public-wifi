@@ -9,15 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="수정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/common/JDBCTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkGroupDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/HistoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/WifiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/WifiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wifi.db" beforeDir="false" afterPath="$PROJECT_DIR$/wifi.db" afterDir="false" />
+    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="3일차">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +275,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687805198367</updated>
       <workItem from="1687805199374" duration="29048000" />
-      <workItem from="1687938089308" duration="962000" />
+      <workItem from="1687938089308" duration="1381000" />
     </task>
     <task id="LOCAL-00001" summary="1일차">
       <created>1687828739832</created>
@@ -312,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687864544080</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="3일차">
+      <created>1687939569913</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687939569913</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +323,7 @@
     <MESSAGE value="2일차" />
     <MESSAGE value="README 추가" />
     <MESSAGE value="수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="수정" />
+    <MESSAGE value="3일차" />
+    <option name="LAST_COMMIT_MESSAGE" value="3일차" />
   </component>
 </project>

@@ -137,7 +137,7 @@
         historyDao.insert(historyDto);
 
         WifiDao wifiDao = new WifiDao();
-        List<WifiDto> wifiDaoList = wifiDao.selectList(latValue, lntValue);
+        List<WifiDto> wifiDaoList = wifiDao.selectList(lntValue, latValue);
 
         for (WifiDto item : wifiDaoList) {
     %>
@@ -227,11 +227,11 @@
     }
 
     function showPosition(position) {
-        const x = position.coords.latitude;
-        const y = position.coords.longitude;
+        const lat = position.coords.latitude;
+        const lnt = position.coords.longitude;
 
-        document.getElementById("lat").value = x;
-        document.getElementById("lnt").value = y;
+        document.getElementById("lat").value = lat;
+        document.getElementById("lnt").value = lnt;
     }
 </script>
 </body>

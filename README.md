@@ -27,4 +27,4 @@
 <img width="985" alt="스크린샷 2023-06-27 오후 6 45 30" src="https://github.com/9898s/seoul-public-wifi/assets/46531692/77f64e45-0149-4de2-9e62-07998b6127d0">
 
 ## 시연 영상
-[![Video Label](http://img.youtube.com/vi/zZlPCAJbEF8/0.jpg)](https://youtu.be/zZlPCAJbEF8)
+[![Video Label](http://img.youtube.com/vi/zdfjCEgJEqg/0.jpg)](https://youtu.be/zdfjCEgJEqg)

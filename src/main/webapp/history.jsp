@@ -88,10 +88,10 @@
             <%= item.getId() %>
         </td>
         <td>
-            <%= item.getLnt() %>
+            <%= item.getLat() %>
         </td>
         <td>
-            <%= item.getLat() %>
+            <%= item.getLnt() %>
         </td>
         <td>
             <%= strDate %>

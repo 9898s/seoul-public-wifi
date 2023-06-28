@@ -9,10 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="README 수정">
+    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="4일차">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/service/WifiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/service/WifiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/load-wifi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/load-wifi.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/HistoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/WifiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/WifiDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/history.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/history.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wifi.db" beforeDir="false" afterPath="$PROJECT_DIR$/wifi.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -280,7 +283,7 @@
       <workItem from="1687805199374" duration="29048000" />
       <workItem from="1687938089308" duration="2330000" />
       <workItem from="1687946354084" duration="2899000" />
-      <workItem from="1687962704331" duration="4640000" />
+      <workItem from="1687962704331" duration="8044000" />
     </task>
     <task id="LOCAL-00001" summary="1일차">
       <created>1687828739832</created>
@@ -331,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687939978366</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="4일차">
+      <created>1687967617724</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687967617724</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +354,7 @@
     <MESSAGE value="수정" />
     <MESSAGE value="3일차" />
     <MESSAGE value="README 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="README 수정" />
+    <MESSAGE value="4일차" />
+    <option name="LAST_COMMIT_MESSAGE" value="4일차" />
   </component>
 </project>

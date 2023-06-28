@@ -180,9 +180,9 @@ public class WifiDao extends JDBCTemplate {
                     "LIMIT 20;";
 
             ps = conn.prepareStatement(sql);
-            ps.setDouble(1, lnt);
-            ps.setDouble(2, lat);
-            ps.setDouble(3, lnt);
+            ps.setDouble(1, lat);
+            ps.setDouble(2, lnt);
+            ps.setDouble(3, lat);
 
             rs = ps.executeQuery();
             while (rs.next()) {

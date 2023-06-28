@@ -23,11 +23,11 @@ public class HistoryDao extends JDBCTemplate {
         try {
             conn = DriverManager.getConnection(Db.URL);
 
-            String sql = "INSERT INTO HISTORY (LNT, LAT, SEARCH_DTTM) VALUES (?, ?, datetime('now', 'localtime'));";
+            String sql = "INSERT INTO HISTORY (LAT, LNT, SEARCH_DTTM) VALUES (?, ?, datetime('now', 'localtime'));";
 
             ps = conn.prepareStatement(sql);
-            ps.setDouble(1, historyDto.getLnt());
-            ps.setDouble(2, historyDto.getLat());
+            ps.setDouble(1, historyDto.getLat());
+            ps.setDouble(2, historyDto.getLnt());
 
             affected = ps.executeUpdate();
             if (affected > 0) {
@@ -135,14 +135,14 @@ public class HistoryDao extends JDBCTemplate {
             rs = ps.executeQuery();
             while (rs.next()) {
                 int id = rs.getInt("ID");
-                double lnt = rs.getDouble("LNT");
                 double lat = rs.getDouble("LAT");
+                double lnt = rs.getDouble("LNT");
                 Date srcDttm = rs.getDate("SEARCH_DTTM");
 
                 HistoryDto historyDto = new HistoryDto();
                 historyDto.setId(id);
-                historyDto.setLnt(lnt);
                 historyDto.setLat(lat);
+                historyDto.setLnt(lnt);
                 historyDto.setSrcDttm(srcDttm);
 
                 historyDtoList.add(historyDto);

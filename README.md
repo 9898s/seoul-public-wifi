@@ -18,7 +18,7 @@
 ## 📚 기술 스택
 - 개발 언어: Java (JDK 1.8), JSP
 - 라이브러리: gson 2.9.0, lombok 1.18.24, sqlite 3.36.03
-- 개발 도구: IntelliJ IDEA, GitHub, eXERD
+- 개발 도구: Tomcat 8.5.90, IntelliJ IDEA, GitHub, eXERD
 
 ## 📅 개발 기간
 - 2023/06/19 ~ 2023/07/10

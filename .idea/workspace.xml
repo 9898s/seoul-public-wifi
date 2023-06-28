@@ -9,8 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="3일차">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="README 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/service/WifiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/service/WifiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/load-wifi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/load-wifi.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wifi.db" beforeDir="false" afterPath="$PROJECT_DIR$/wifi.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +278,9 @@
       <option name="presentableId" value="Default" />
       <updated>1687805198367</updated>
       <workItem from="1687805199374" duration="29048000" />
-      <workItem from="1687938089308" duration="1381000" />
+      <workItem from="1687938089308" duration="2330000" />
+      <workItem from="1687946354084" duration="2899000" />
+      <workItem from="1687962704331" duration="4640000" />
     </task>
     <task id="LOCAL-00001" summary="1일차">
       <created>1687828739832</created>
@@ -312,7 +317,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687939569913</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="README 수정">
+      <created>1687939642617</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687939642617</updated>
+    </task>
+    <task id="LOCAL-00007" summary="README 수정">
+      <created>1687939978366</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687939978366</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +343,7 @@
     <MESSAGE value="README 추가" />
     <MESSAGE value="수정" />
     <MESSAGE value="3일차" />
-    <option name="LAST_COMMIT_MESSAGE" value="3일차" />
+    <MESSAGE value="README 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="README 수정" />
   </component>
 </project>

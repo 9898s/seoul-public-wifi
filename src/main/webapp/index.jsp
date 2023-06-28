@@ -67,10 +67,10 @@
 
 <form method="get" action="index.jsp" id="form-list">
     <label>
-        LNT: <input type="text" id="lnt" name="lnt" value="0.0">
+        LAT: <input type="text" id="lat" name="lat" value="0.0">
     </label>
     <label>
-        LAT: <input type="text" id="lat" name="lat" value="0.0">
+        LNT: <input type="text" id="lnt" name="lnt" value="0.0">
     </label>
     <input type="button" value="내 위치 가져오기" onclick="getLocation();">
     <input type="submit" value="근처 WIFI 정보 보기">
@@ -204,6 +204,20 @@
 </table>
 
 <script>
+    const params = new URLSearchParams(window.location.search)
+    const lnt = params.get("lnt")
+    const lat = params.get("lat")
+
+    if (lnt) {
+        const lntElement = document.getElementById("lnt")
+        lntElement.setAttribute("value", lnt)
+    }
+
+    if (lat) {
+        const latElement = document.getElementById("lat")
+        latElement.setAttribute("value", lat)
+    }
+
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
@@ -213,11 +227,11 @@
     }
 
     function showPosition(position) {
-        const x = position.coords.longitude;
-        const y = position.coords.latitude;
+        const x = position.coords.latitude;
+        const y = position.coords.longitude;
 
-        document.getElementById("lnt").value = y;
         document.getElementById("lat").value = x;
+        document.getElementById("lnt").value = y;
     }
 </script>
 </body>

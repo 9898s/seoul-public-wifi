@@ -1,13 +1,14 @@
 package com.example.seoulpublicwifi.dao;
 
 import com.example.seoulpublicwifi.common.Db;
+import com.example.seoulpublicwifi.common.JDBCTemplate;
 import com.example.seoulpublicwifi.dto.HistoryDto;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HistoryDao {
+public class HistoryDao extends JDBCTemplate {
     public int insert(HistoryDto historyDto) {
         try {
             Class.forName(Db.CLASS);
@@ -37,20 +38,8 @@ public class HistoryDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(ps);
+            close(conn);
         }
         return affected;
     }
@@ -83,20 +72,8 @@ public class HistoryDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(ps);
+            close(conn);
         }
         return affected;
     }
@@ -128,27 +105,9 @@ public class HistoryDao {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } finally {
-            try {
-                if (rs != null && !rs.isClosed()) {
-                    rs.close();
-                }
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
+            close(rs);
+            close(ps);
+            close(conn);
         }
         return count;
     }
@@ -191,27 +150,9 @@ public class HistoryDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (rs != null && !rs.isClosed()) {
-                    rs.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(rs);
+            close(ps);
+            close(conn);
         }
         return historyDtoList;
     }

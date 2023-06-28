@@ -9,18 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="README 추가">
+    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="수정">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/common/JDBCTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/BookmarkGroupDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/HistoryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/WifiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/WifiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-add-submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-add-submit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-delete-submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-delete-submit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-group-add-submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-add-submit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-group-delete-submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-delete-submit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-group-edit-submit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-edit-submit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/history-delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/history-delete.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wifi.db" beforeDir="false" afterPath="$PROJECT_DIR$/wifi.db" afterDir="false" />
     </list>
@@ -32,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,20 +51,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/suhwan/Desktop/seoul-public-wifi/src/main/webapp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/suhwan/Desktop/seoul-public-wifi/src/main/webapp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
@@ -286,7 +281,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687805198367</updated>
-      <workItem from="1687805199374" duration="27465000" />
+      <workItem from="1687805199374" duration="29048000" />
+      <workItem from="1687938089308" duration="962000" />
     </task>
     <task id="LOCAL-00001" summary="1일차">
       <created>1687828739832</created>
@@ -309,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687859360469</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="수정">
+      <created>1687864544080</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687864544080</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +322,7 @@
     <MESSAGE value="1일차" />
     <MESSAGE value="2일차" />
     <MESSAGE value="README 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="README 추가" />
+    <MESSAGE value="수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="수정" />
   </component>
 </project>

@@ -1,13 +1,14 @@
 package com.example.seoulpublicwifi.dao;
 
 import com.example.seoulpublicwifi.common.Db;
+import com.example.seoulpublicwifi.common.JDBCTemplate;
 import com.example.seoulpublicwifi.dto.WifiDto;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WifiDao {
+public class WifiDao extends JDBCTemplate {
     public int insert(WifiDto wifiDto) {
         try {
             Class.forName(Db.CLASS);
@@ -51,20 +52,8 @@ public class WifiDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(ps);
+            close(conn);
         }
         return affected;
     }
@@ -129,27 +118,9 @@ public class WifiDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (rs != null && !rs.isClosed()) {
-                    rs.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(rs);
+            close(ps);
+            close(conn);
         }
         return wifiDto;
     }
@@ -179,20 +150,8 @@ public class WifiDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(ps);
+            close(conn);
         }
     }
 
@@ -221,9 +180,9 @@ public class WifiDao {
                     "LIMIT 20;";
 
             ps = conn.prepareStatement(sql);
-            ps.setDouble(1, lat);
-            ps.setDouble(2, lnt);
-            ps.setDouble(3, lat);
+            ps.setDouble(1, lnt);
+            ps.setDouble(2, lat);
+            ps.setDouble(3, lnt);
 
             rs = ps.executeQuery();
             while (rs.next()) {
@@ -269,27 +228,9 @@ public class WifiDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (rs != null && !rs.isClosed()) {
-                    rs.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(rs);
+            close(ps);
+            close(conn);
         }
         return wifiDtoList;
     }

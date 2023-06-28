@@ -1,13 +1,14 @@
 package com.example.seoulpublicwifi.dao;
 
 import com.example.seoulpublicwifi.common.Db;
+import com.example.seoulpublicwifi.common.JDBCTemplate;
 import com.example.seoulpublicwifi.dto.BookmarkDto;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookmarkDao {
+public class BookmarkDao extends JDBCTemplate {
     public int upsert(BookmarkDto bookmarkDto) {
         try {
             Class.forName(Db.CLASS);
@@ -37,20 +38,8 @@ public class BookmarkDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(ps);
+            close(conn);
         }
         return affected;
     }
@@ -91,27 +80,9 @@ public class BookmarkDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (rs != null && !rs.isClosed()) {
-                    rs.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(rs);
+            close(ps);
+            close(conn);
         }
         return bookmarkDto;
     }
@@ -144,20 +115,8 @@ public class BookmarkDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(ps);
+            close(conn);
         }
         return affected;
     }
@@ -189,27 +148,9 @@ public class BookmarkDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (rs != null && !rs.isClosed()) {
-                    rs.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(rs);
+            close(ps);
+            close(conn);
         }
         return count;
     }
@@ -256,27 +197,9 @@ public class BookmarkDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (rs != null && !rs.isClosed()) {
-                    rs.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (ps != null && !ps.isClosed()) {
-                    ps.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            close(rs);
+            close(ps);
+            close(conn);
         }
         return bookmarkDtoList;
     }

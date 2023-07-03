@@ -9,13 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="4일차">
+    <list default="true" id="8624edb7-229c-4cdb-a519-ed618b805d8a" name="변경" comment="수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/HistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/HistoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/WifiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/seoulpublicwifi/dao/WifiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/history.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/history.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wifi.db" beforeDir="false" afterPath="$PROJECT_DIR$/wifi.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -52,6 +49,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -61,6 +62,9 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;라이브러리&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -69,6 +73,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.seoulpublicwifi.controller" />
       <recent name="com.example.seoulpublicwifi.dao" />
       <recent name="com.example.seoulpublicwifi.dto" />
     </key>
@@ -283,7 +288,13 @@
       <workItem from="1687805199374" duration="29048000" />
       <workItem from="1687938089308" duration="2330000" />
       <workItem from="1687946354084" duration="2899000" />
-      <workItem from="1687962704331" duration="8044000" />
+      <workItem from="1687962704331" duration="10170000" />
+      <workItem from="1688117892212" duration="880000" />
+      <workItem from="1688118994912" duration="1905000" />
+      <workItem from="1688121513389" duration="4117000" />
+      <workItem from="1688128860475" duration="1856000" />
+      <workItem from="1688137558938" duration="17000" />
+      <workItem from="1688137701669" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="1일차">
       <created>1687828739832</created>
@@ -341,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687967617724</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="수정">
+      <created>1687971183087</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687971183087</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,10 +369,10 @@
     <MESSAGE value="1일차" />
     <MESSAGE value="2일차" />
     <MESSAGE value="README 추가" />
-    <MESSAGE value="수정" />
     <MESSAGE value="3일차" />
     <MESSAGE value="README 수정" />
     <MESSAGE value="4일차" />
-    <option name="LAST_COMMIT_MESSAGE" value="4일차" />
+    <MESSAGE value="수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="수정" />
   </component>
 </project>
